@@ -7,8 +7,8 @@ ADD etc /etc
 ADD public /var/www/html
 
 ADD scripts/build.sh /build.sh
-RUN chmod +x /build.sh && /build.sh && rm -f /build.sh
+RUN chmod +x /build.sh; sync; /build.sh; rm -f /build.sh
 
 ADD scripts/start.sh /start.sh
-RUN chmod +x /start.sh
+RUN chmod +x /start.sh; sync
 CMD ["/start.sh"]

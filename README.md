@@ -47,3 +47,5 @@ Then supply your vhost configuration as a volume
       ...
       - ./my-vhost.conf:/etc/nginx/sites-enabled/default.conf:ro
 ```
+
+Once your container is up and running, you can visit http://localhost to see you app.

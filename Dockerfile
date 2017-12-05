@@ -3,6 +3,8 @@ MAINTAINER Bartosz Maciaszek <bartosz.maciaszek@gmail.com>
 
 EXPOSE 80
 
+ENV ENABLE_XDEBUG 0
+
 ADD etc /etc
 ADD public /var/www/html
 

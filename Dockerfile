@@ -4,6 +4,7 @@ MAINTAINER Bartosz Maciaszek <bartosz.maciaszek@gmail.com>
 EXPOSE 80
 
 ENV ENABLE_XDEBUG 0
+ENV COMPOSER_ALLOW_SUPERUSER 1
 
 ADD etc /etc
 ADD public /var/www/html
